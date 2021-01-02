@@ -50,7 +50,7 @@ def respond(voice_data):
         url = 'https://google.nl/maps/place/' + location + '/&amp;'
         webbrowser.get().open(url)
         friday_speak("Here is the location of " + location)
-    if 'bye' in voice_data:
+    if 'end' in voice_data:
         friday_speak('See you ')
         exit()
 
